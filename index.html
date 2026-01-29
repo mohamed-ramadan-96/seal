@@ -1,47 +1,84 @@
-<!-- Copyright (C) 2023-2025 anonymous
-
-This file is part of PSFree.
-
-PSFree is free software: you can redistribute it and/or modify
-it under the terms of the GNU Affero General Public License as
-published by the Free Software Foundation, either version 3 of the
-License, or (at your option) any later version.
-
-PSFree is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU Affero General Public License for more details.
-
-You should have received a copy of the GNU Affero General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>.
--->
-<html>
-    <head>
-        <meta charset='utf-8'>
-        <title>PSFree-Lapse Exploit For PS4 9.00</title>
-        <style>
-            @font-face {
-                font-family: 'logging';
-                src: url('fonts/LiberationMono-Regular.ttf');
-            }
-            #console {
-                font-family: 'logging';
-            }
-        </style>
-        <script>
-        if (window.applicationCache.status=='0')
-        {
-          window.location.replace("cache.html");
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSFree-Lapse Exploit For PS4 9.00</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        if (window.applicationCache.status=='0') {
+            window.location.replace("cache.html");
         }
-        </script>
-    </head>
-    <body>
-        PSFree: A PS4/PS5 Exploit Chain
-        <br>
-        <br>
-        See <a href='./about.html' data-jslicense='1'>JavaScript license information</a> for the
-        source code and license.<br>
-        <pre id='console'></pre>
-    </body>
-    <script type='module' src='./alert.mjs'></script>
-</html>
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>PSFREE: KO PS4 Exploit Chain</h1>
+        <p>See <a href='./about.html' data-jslicense='1'>JavaScript license information</a> for the source code and license.</p>
+        <pre id="console"></pre>
+    </div>
+    <script type="module" src="./alert.mjs"></script>
+</body>
+</html><style>/* تحديد نوع الخط */
+@font-face {
+    font-family: 'logging';
+    src: url('fonts/LiberationMono-Regular.ttf');
+}
+
+/* إعدادات التنسيق العام للصفحة */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2f2f2f; /* لون الخلفية الرمادي */
+    color: #fff; /* النصوص تكون باللون الأبيض */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* استغلال كامل ارتفاع الشاشة */
+    display: flex;
+    justify-content: center; /* محاذاة المحتوى في الوسط أفقيًا */
+    align-items: center; /* محاذاة المحتوى في الوسط عموديًا */
+    text-align: center;
+}
+
+/* التنسيق الخاص بالكود داخل صفحة */
+#console {
+    font-family: 'logging', monospace;
+    background-color: #1e1e1e; /* لون خلفية الكود */
+    color: #00ff00; /* اللون الأخضر للكود */
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #00ff00; /* حدود حول الكود باللون الأخضر */
+    width: 80%; /* عرض الكود داخل الإطار */
+    max-width: 800px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* تأثير الظل */
+    font-size: 16px;
+    white-space: pre-wrap; /* يسمح بعرض الأسطر الطويلة */
+    word-wrap: break-word;
+}
+
+/* التصميم العام للصفحة */
+.container {
+    background-color: #333;
+    padding: 40px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+/* تصميم الروابط */
+a {
+    color: #ffeb3b; /* اللون الأصفر */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff9800; /* تغير اللون عند المرور على الرابط */
+}
+
+/* تصميم العنوان */
+h1 {
+    font-size: 24px;
+    color: #ffeb3b;
+    margin-bottom: 20px;
+}</style>
